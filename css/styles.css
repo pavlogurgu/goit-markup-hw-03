@@ -24,6 +24,13 @@ li{
     text-decoration: none;
     
 }
+p, h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+ul, ol{
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -151,6 +158,7 @@ color: var(--title-text)
 
 .header {
     background: var(--main-background);
+    height: 80px;
     
 }
 
@@ -164,6 +172,7 @@ color: var(--title-text)
     /* identical to box height */
     
     letter-spacing: 0.03em;
+   
 }
 .logo-blue {
     color: var(--blue-logo);
