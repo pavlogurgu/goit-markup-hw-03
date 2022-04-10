@@ -15,6 +15,11 @@
 li{
     list-style-type: none;
 }
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .link{
     text-decoration: none;
     font-style: normal;
@@ -50,6 +55,10 @@ body{
 /*--------- index -----------*/
 .container{
     width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
@@ -74,30 +83,38 @@ body{
 
 .hero {
     background: var(--hero-background);
+    text-align: center;
+    margin-bottom: 94px;
 }
 .hero-text {
+    
     font-weight: 900;
 font-size: 44px;
 line-height: 1.37;
 /* or 136% */
 
-text-align: center;
+
 letter-spacing: 0.06em;
 text-transform: uppercase;
 
 color: var(--white-text);
+padding-top: 200px;
+margin: 0px auto 30px auto;
+
+
 
 }
 .hero-button {
+    display: inline-block;
     font-weight: 700;
 font-size: 16px;
 line-height: 1.88;
 font-family: 'Roboto', sans-serif;
 /* identical to box height, or 188% */
 
-
+margin-bottom: 200px;
 align-items: center;
-text-align: center;
+
 letter-spacing: 0.06em;
 background-color: var(--hero-btncolor);
 color: var(--white-text);
@@ -107,6 +124,7 @@ color: var(--white-text);
 }
 .section-team{
     background: var(--team-backround);
+    padding-top: 94px;
 }
 .title {
     font-weight: 700;
@@ -116,6 +134,14 @@ text-align: center;
 letter-spacing: 0.03em;
 
 color: var(--title-name);
+margin-bottom: 50px;
+}
+.features-text{
+    display: flex;
+    margin-bottom: 94px;
+}
+.features-text:not(:last-child){
+    margin-right: 30px;
 }
 .pre-title {
     font-weight: 700;
@@ -125,6 +151,8 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 
 color: var(--title-name);
+display: block;
+margin-bottom: 10px;
 }
 .pre-title-text {
     font-weight: 400;
@@ -135,7 +163,20 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 
 color: var(--title-text);
+display: block;
 }
+.our-work-images{
+    display: inline-flex;
+    margin-bottom: 94px;
+}
+.our-work-images:not(:last-child){
+    margin-right: 30px;
+}
+.card-content{
+    background-color: var(--main-background);
+    margin-bottom: 94px;
+}
+
 .team-member {
     font-weight: 500;
 font-size: 16px;
@@ -146,6 +187,9 @@ text-align: center;
 letter-spacing: 0.03em;
 
 color: var(--title-name);
+padding-top: 30px;
+
+
 }
 .team-member-role {
     font-weight: 400;
@@ -156,7 +200,30 @@ line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
 
-color: var(--title-text)
+color: var(--title-text);
+margin-top: 10px;
+margin-bottom: 30px;
+
+}
+.team-member-img{
+    margin-top: 30px;
+
+}
+.our-team{
+    display: flex;
+    margin-left: -30px;
+
+}
+.our-team > .our-member{
+flex-basis: calc(100% / 4 - 30px);
+margin-left: 30px;
+}
+.our-member{
+
+}
+.footer-nav{
+    padding-top: 60px;
+    padding-bottom: 20px;
 }
 
 /*--------- portfolio -----------*/
@@ -165,6 +232,39 @@ color: var(--title-text)
     background: var(--main-background);
     height: 80px;
     
+}
+
+nav{
+display: flex;
+}
+.site-nav{
+    display: flex;
+}
+.main-nav{
+    display: flex;
+}
+.contacts-nav{
+    display: flex;
+    
+}
+.site-nav li:not(:last-child){
+    margin-right: 50px;
+}
+.site-nav li{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32 px;
+
+}
+.contacts-nav li{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32 px;
+    
+}
+.contacts-nav li:not(:last-child){
+    margin-right: 50px;
+    margin-left: auto;
 }
 
 
@@ -177,6 +277,9 @@ color: var(--title-text)
     /* identical to box height */
     
     letter-spacing: 0.03em;
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
    
 }
 .logo-blue {
@@ -205,6 +308,16 @@ color: var(--title-text)
     letter-spacing: 0.02em;
     
     color: var(--title-text);
+    display: flex;
+}
+.header-contacts li:not(:last-child){
+    margin-right: 50px;
+}
+.header-contacts li{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32 px;
+
 }
 .main {
     background: var(--main-background);
@@ -272,4 +385,11 @@ color: var(--white-text);
     letter-spacing: 0.03em;
     
     color: rgba(255, 255, 255, 0.6);
+    
+}
+.footer-items:not(:last-child){
+    padding-bottom: 9px;
+}
+.footer-items:last-child{
+    padding-bottom: 60px;
 }

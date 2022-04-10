@@ -14,15 +14,17 @@
   <body>
     <!-- основна інфа -->
     <header class="header">
+
+      <div class="main-nav container">
       <nav>
         <a href="./index.html" class="logo logo-blue logo-link">Web<span class="logo logo-black">Studio</span></a>
-        <ul>
+        <ul class="site-nav">
           <li><a href="index.html" class="link active-page">Студія</a></li>
           <li><a href="portfolio.html" class="page-header link">Портфоліо</a></li> 
           <li><a href="" class="page-header link">Контакти</a></li>
         </ul>
       </nav>
-      <ul>
+      <ul class="contacts-nav container">
         <li>
           <a href="tel:+380961111111" class="header-contacts link">+38 096 111 11 11</a>
         </li>
@@ -30,18 +32,22 @@
           <a href="mailto:info@devstudio.com" class="header-contacts link">info@devstudio.com</a>
         </li>
       </ul>
+      </div>
     </header>
 
     <main class="main">
       <!-- перша секція -->
       <section class="hero">
-        <h1 class="hero-text">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="hero-button pointer">Замовити послугу</button>
+        <div class="container">
+          <h1 class="hero-text">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="hero-button pointer">Замовити послугу</button>
+        </div>
       </section>
       <!-- Друга секція -->
       <section class="section">
+        <div class="container">
         <h2 class="title visually-hidden" aria-hidden="true" tabindex="-1">Features</h2>
-        <ul>
+        <ul class="features-text">
           <li>
            <h3 class="pre-title">Увага до деталей</h3>
            <p class="pre-title-text">Ідейні міркування, а також початок буденної роботи з формування позиції</p>
@@ -59,70 +65,99 @@
             <p class="pre-title-text">Значність цих проблем настільки очевидна, що реалізація планових завдань</p>
           </li>
         </ul>
+        </div>
       </section>
       <!-- Третя секція -->
       <section class="section">
+        <div class="container">
         <h2 class="title">Чим ми займаємось</h2>
         <ul>
-          <li>
+          <li class="our-work-images">
             <img src=".\images\img1.png" alt="Бек-енд розробка" width="270" />
-
+          </li>
+          <li class="our-work-images">
             <img src=".\images\img2.png" alt="Фронт-енд розробка" width="270" />
-
+          </li>
+          <li class="our-work-images">
             <img src=".\images\img3.png" alt="Розробка стилю" width="270" />
           </li>
         </ul>
+      </div>
       </section>
       <!-- Четверта секція -->
       <section class="section-team">
+        <div class="container">
         <h2 class="title">Наша команда</h2>
-        <ul>
-          <li>
+        <ul class="our-team">
+          <li class="our-member">
             <img
               src=".\images\img4.jpg"
               alt="Product Designer"
               width="270"
+              class="team-member-img"
             />
+            <div class="card-content">  
+              <h3 class="team-member">Ігор Дем'яненко</h3>
+              <p lang="en" class="team-member-role">Product Designer</p>
+            </div>
           </li>
-          <h3 class="team-member">Ігор Дем'яненко</h3>
-          <p lang="en" class="team-member-role">Product Designer</p>
-          <li>
-            <img src=".\images\img5.jpg" alt="Frontend Developer" width="270" />
+         
+          <li class="our-member">
+            <img 
+            src=".\images\img5.jpg" 
+            alt="Frontend Developer" 
+            width="270" 
+            class="team-member-img"
+            />
+            <div class="card-content">
+              <h3 class="team-member">Ольга Рєпіна</h3>
+              <p lang="en" class="team-member-role">Frontend Developer</p>
+            </div>
           </li>
-          <h3 class="team-member">Ольга Рєпіна</h3>
-          <p lang="en" class="team-member-role">Frontend Developer</p>
-          <li>
+          
+          <li class="our-member">
             <img
               src=".\images\img6.jpg"
               alt="Marketing"
               width="270"
+              class="team-member-img"
             />
+            <div class="card-content">
+              <h3 class="team-member">Микола Тарасов</h3>
+              <p lang="en" class="team-member-role">Marketing</p>
+            </div>
           </li>
-          <h3 class="team-member">Микола Тарасов</h3>
-          <p lang="en" class="team-member-role">Marketing</p>
-          <li>
+          
+          <li class="our-member">
             <img
               src=".\images\img7.jpg"
               alt="UI Designer"
               width="270"
+              class="team-member-img"
             />
+            <div class="card-content">
+              <h3 class="team-member">Михайло Єрмаков</h3>
+              <p lang="en" class="team-member-role">UI Designer</p>
+            </div>
           </li>
-          <h3 class="team-member">Михайло Єрмаков</h3>
-          <p lang="en" class="team-member-role">UI Designer</p>
+          
         </ul>
+      </div>
       </section>
     </main>
     <footer class="footer">
+      <div class="container footer-nav">
       <a href="./index.html" class="logo logo-blue logo-link">Web<span class="logo logo-white">Studio</span></a>
-      <address>
+    </div>
+      <address class="container">
         <ul>
-         <li>
+         <li class="footer-items">
             <a href="https://goo.gl/maps/1e6sSvzwmUZJnKFR7" class="footer-address link">м.Київ бульвар Лесі Українки, 26</a>
          </li>
-         <li>
+         <li class="footer-items">
             <a href="tel:+380961111111" class="footer-contacts link">+38 096 111 11 11</a>
          </li>
-          <li>
+          <li class="footer-items">
            <a href="mailto:info@devstudio.com" class="footer-contacts link">info@devstudio.com</a>
          </li>
         </ul>
