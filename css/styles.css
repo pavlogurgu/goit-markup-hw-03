@@ -63,6 +63,11 @@ body{
     margin-left: auto;
     margin-right: auto;
     
+    
+}
+
+header .container{
+display: flex;
 }
 
 .link:hover,
@@ -134,7 +139,10 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     padding-bottom: 94px;
     padding-top: 94px;
 }
-
+.section-three{
+    background-color: var(--main-background);
+    padding-bottom: 94px;
+}
 
 
 .section-team{
@@ -158,14 +166,19 @@ margin-bottom: 50px;
    
    
 }
+
 .features-text li{
     display: block;
     width: 270px;
-    margin-left: 30px;
+    
+    
 }
-.features-text + .features-text{
+.features-text-margin + .features-text-margin { 
+    
     margin-left: 30px;
+    
 }
+
 
 .pre-title {
     font-weight: 700;
@@ -252,10 +265,7 @@ margin-left: 30px;
 
 
 }
-.footer-nav{
-    
-    padding-bottom: 20px;
-}
+
 
 /*--------- portfolio -----------*/
 
@@ -274,11 +284,10 @@ display: flex;
     margin-right: 331px;
     
 }
-.main-nav{
-    display: flex;
-}
+
 .contacts-nav{
     display: flex;
+    
     
     
 }
@@ -295,6 +304,7 @@ display: flex;
 }
 .contacts-nav li{
     display: block;
+    
    
     
 }
@@ -319,6 +329,7 @@ display: flex;
    
 }
 .logo-footer{
+    display: block;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -349,7 +360,7 @@ display: flex;
 
 }
 .header-portfolio{
-    margin-bottom: 94px;
+  
     border-bottom: 1px solid var(--border-one);
 }
 .header-contacts {
@@ -361,6 +372,7 @@ display: flex;
     
     color: var(--title-text);
     display: flex;
+
 }
 .header-contacts a:not(:last-child){
     margin-right: 50px;
@@ -405,7 +417,6 @@ display: block;
 border-radius: 4px;
 border-color: transparent;
 background-color: var(--team-backround);
-height: 38px;
 padding: 6px 22px 6px 22px;
 }
 .button-selected{
@@ -426,7 +437,7 @@ background-color: var(--accent-color);
     background-color: var(--portfolio-item);
     padding: 20px 24px 20px 24px;
     border: 1px solid var(--border-two);
-    box-sizing: border-box;
+    border-top: 0;
     
 }
 
@@ -435,7 +446,6 @@ background-color: var(--accent-color);
     margin-left: -30px;
     margin-top: -30px;
     flex-wrap: wrap;
-    margin-bottom: 94px;
 
 }
 .our-portfolio > .portfolio-item{
